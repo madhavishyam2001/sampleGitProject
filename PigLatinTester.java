@@ -1,12 +1,13 @@
 import java.util.*;
 public class PigLatinTester {
 	public static void main(String args[]) {
-		Scanner sc = new Scanner(System.in);
+		//Scanner sc = new Scanner(System.in);
 		String yn = "y";
 		
 		while (yn.equals("y") || yn.equals("Y")) {
 			System.out.println("Enter the word to be translated: ");
-			String text = sc.nextLine();
+			//String text = sc.nextLine();
+			String text = "BharataaaShyam";
 			Translator pigLatin = new Translator(text);
 			
 			if (pigLatin.firstVowelPos() == -1) {
@@ -20,7 +21,9 @@ public class PigLatinTester {
 			
 			
 			System.out.println("Do you want to continue? (y/n)");
-			yn = sc.nextLine();
+			yn = "n" ; 
+			System.out.println("Bye..A big ... Thank You!");
+			// sc.nextLine();
 		}
 		
 	}
